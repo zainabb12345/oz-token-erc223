@@ -1,0 +1,80 @@
+{
+  "contracts": {
+    "ERC223ReceivingContract": {
+      "address": "0x2337E3Ce610678774c0fd6E569b7B68b316c7B3F",
+      "constructorCode": "608060405234801561001057600080fd5b50610150806100206000396000f3fe",
+      "bodyBytecodeHash": "0338faf99f2b55313218a9d20da2d3e938e669acf9ad077651423ac000269056",
+      "localBytecodeHash": "a9cf05fd1701e430c0d1c2e9ee953d38e31ac743fee13f6f42308fa4e7de0d04",
+      "deployedBytecodeHash": "a9cf05fd1701e430c0d1c2e9ee953d38e31ac743fee13f6f42308fa4e7de0d04",
+      "types": {
+        "t_bytes": {
+          "id": "t_bytes",
+          "kind": "elementary",
+          "label": "bytes"
+        },
+        "t_mapping<t_bytes>": {
+          "id": "t_mapping<t_bytes>",
+          "valueType": "t_bytes",
+          "label": "mapping(key => bytes)",
+          "kind": "mapping"
+        }
+      },
+      "storage": [
+        {
+          "contract": "ERC223ReceivingContract",
+          "path": "contracts/ReceivingContract.sol",
+          "label": "store",
+          "astId": 116,
+          "type": "t_mapping<t_bytes>",
+          "src": "107:51:2"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "oz-223/ERC223ReceivingContract": [
+      {
+        "address": "0x23f88a5e324289ba1E69163AEd90E222DD173ddC",
+        "kind": "NonProxy",
+        "bytecodeHash": "77a608923c59fa20781ddf7f9e8146684d6e4aa82f9245d736c72a04b2cf41e8"
+      },
+      {
+        "address": "0x62F0B5d7cb22cDA69CeA1Efe043AAE0be7Ab5D18",
+        "kind": "NonProxy",
+        "bytecodeHash": "77a608923c59fa20781ddf7f9e8146684d6e4aa82f9245d736c72a04b2cf41e8"
+      },
+      {
+        "address": "0x2ac3371Ae4Dd3867df2779457f8B5d8e38841277",
+        "version": "1.0.0",
+        "implementation": "0x2337E3Ce610678774c0fd6E569b7B68b316c7B3F",
+        "admin": "0x6b2FB017f54B306F57ED88A8132beA27EB13ea9B",
+        "kind": "Upgradeable"
+      }
+    ],
+    "oz-223/oz223": [
+      {
+        "address": "0xEb527e706Ce1858fE3Fc1aa133184874e27b8e71",
+        "kind": "NonProxy",
+        "bytecodeHash": "bd4104a325d6b7ecaac14d0f0781ac5b146f8bd768d6a6ee36ff424e07c11f93"
+      },
+      {
+        "address": "0xe58361b63Ca4ea98E2Df9bf6F3D4863a20B43392",
+        "kind": "NonProxy",
+        "bytecodeHash": "381d834f807ece26f9b7f93979c5452749ca8d5e1a7612f61a4f130d2f68ea8f"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x6b2FB017f54B306F57ED88A8132beA27EB13ea9B"
+  }
+}
